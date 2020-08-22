@@ -25,9 +25,6 @@ known_face_labels = [
 ]
 
 PIR_input = 29 #read PIR Output         
-PIR_input
-print("Movement Detected!")
-
 
 # Initialize variables
 face_positions = []
@@ -55,6 +52,9 @@ while True:
         for face_encoding in face_converts:
             # See if the face is a match for the known face
             matches = face_recognition.compare_faces(known_face_converts, face_encoding) 
+            # Detecting movement
+            PIR_input
+            print("Movement Detected!")
             # Sending email with image
             def send_an_email_image():  
                 toEmail = 'g00321094@gmail.com'      # Sending email to
